@@ -1,5 +1,4 @@
-# DATA550_FinalProject
-# Alzheimer's Disease Analysis
+# DATA550_FinalProject Alzheimer's Disease Analysis
 Welcome~~ 
 This repository contains the code and data for analyzing Alzheimer's disease data.
 
