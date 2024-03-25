@@ -4,12 +4,12 @@ This repository contains the code and data for analyzing Alzheimer's disease dat
 
 ## Dataset
 
-Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. 
+- Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. 
 I upload it as a zip file, please feel free to unzip it. 
 
 OR
 
-You can download it straight from the Kaggle website: 
+- You can download it straight from the Kaggle website: 
 https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statistics?resource=download
 
 
