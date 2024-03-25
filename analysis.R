@@ -11,7 +11,7 @@ library(kableExtra)
 library(plotly)
 
 # Read in the data
-data <- read.csv("~/Downloads/Alzheimer_Disease_Healthy_Aging_Data.csv")
+data <- read.csv("~/Desktop/550/Alzheimer_Disease_Healthy_Aging_Data.csv")
 
 # Perform data preprocessing and analysis
 overall_stats <- tibble(
@@ -38,8 +38,8 @@ ethnicity_breakdown <- data %>%
 categorical_breakdown <- bind_rows(gender_breakdown, ethnicity_breakdown)
 
 # Save the overall_stats and categorical_breakdown data frames to files
-saveRDS(overall_stats, "report/overall_stats.rds")
-saveRDS(categorical_breakdown, "report/categorical_breakdown.rds")
+saveRDS(overall_stats, "~/Desktop/550/report/overall_stats.rds")
+saveRDS(categorical_breakdown, "~/Desktop/550/report/categorical_breakdown.rds")
 
 # Generate the final report
-rmarkdown::render("report/report.Rmd", output_format = "html_document")
+rmarkdown::render("~/Desktop/550/report/report.Rmd", output_format = "html_document")
