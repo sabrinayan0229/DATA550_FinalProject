@@ -1,16 +1,16 @@
 # DATA550_FinalProject Alzheimer's Disease Analysis
 Welcome~~ 
-This repository contains the code and data for analyzing Alzheimer's disease data.
+This repository contains the code and data for analyzing Alzheimer's disease data. <br />
 ** I also upload the output file and plots as well. (Just in case you encounter any problems when you run my code locally on your end.) :) 
 
 ## Dataset
 
-- Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. 
+- Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. <br />
 I upload it as a zip file, please feel free to unzip it. 
 
 OR
 
-- You can download it straight from the Kaggle website: 
+- You can download it straight from the Kaggle website: <br />
 https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statistics?resource=download
 
 
