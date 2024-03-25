@@ -16,7 +16,7 @@ https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statis
 
 ## Contents
 
-- `data/`: Contains the dataset file `alzheimers_data.csv`.
+- `data/`: Contains the dataset zip file `Alzheimers_Disease_Healthy_Aging_data.csv`.
 - `code/`: Contains the R scripts for analysis, generating tables, and figures.
   - `analysis.R`: Main analysis script.
   - `table.R`: Script for generating the required table.
