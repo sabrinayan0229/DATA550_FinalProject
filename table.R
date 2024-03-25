@@ -3,7 +3,7 @@ library(dplyr)
 library(kableExtra)
 
 # Read in the data
-data <- read.csv("~/Downloads/Alzheimer_Disease_Healthy_Aging_Data.csv")
+data <- read.csv("~/Desktop/550/Alzheimer_Disease_Healthy_Aging_Data.csv")
 
 # Create the required tables
 gender_breakdown <- data %>%
@@ -21,4 +21,4 @@ ethnicity_breakdown <- data %>%
 categorical_breakdown <- bind_rows(gender_breakdown, ethnicity_breakdown)
 
 # Save the categorical_breakdown data frame to a file
-saveRDS(categorical_breakdown, "report/categorical_breakdown.rds")
+saveRDS(categorical_breakdown, "~/Desktop/550/report/categorical_breakdown.rds")
