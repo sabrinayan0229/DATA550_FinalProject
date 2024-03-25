@@ -6,7 +6,7 @@ This repository contains the code and data for analyzing Alzheimer's disease dat
 ## Dataset
 
 - Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. <br />
-I upload it as a zip file, please feel free to unzip it. 
+I upload the first 1000 rows dataset file, it might alter the result but I uploaded the orgihnal output report. 
 
 OR
 
@@ -16,7 +16,7 @@ https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statis
 
 ## Contents
 
-- `data/`: Contains the dataset zip file `Alzheimers_Disease_Healthy_Aging_data.csv`.
+- `data/`: Contains the dataset file `Alzheimers_Disease_Healthy_Aging_data.csv`.
 - `code/`: Contains the R scripts for analysis, generating tables, and figures.
   - `analysis.R`: Main analysis script.
   - `table.R`: Script for generating the required table.
