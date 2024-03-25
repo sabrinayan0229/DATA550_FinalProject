@@ -32,13 +32,11 @@ knitr::kable(categorical_breakdown, format = "html", caption = "Table 2: Breakdo
 ```
 
 ## Distribution of Class Across Years
-From the graph, it shows 'Overall Health' as a major part of Alzheimer experienced people across these 6 years (2015-2021).
 
-```{r, include=FALSE}
-knitr::include_graphics("plot.png")
-#knitr::include_graphics("interactive_plot.png") 
-#htmltools::includeHTML("~/Desktop/550/report/interactive_plot.html")
-#htmltools::includeHTML("~/Desktop/550/report/interactive_plot.html")
+Here is the bar plot, taking a look at the proportion of class across years.
+
+```{r plot-image, echo=FALSE, results='asis'}
+cat('![From the graph, it shows Overall Health as a major part of Alzheimer experienced people across these 6 years (2015-2021).](plot.png)')
 ```
 
 ## Conclusion
