@@ -7,6 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(here)
 ```
 
 ## Introduction
@@ -19,7 +20,7 @@ The following basic general prevalence of Alzheimer's disease across various yea
 Overall Statistics: 
 
 ```{r, echo= FALSE}
-overall_stats <- readRDS("~/Desktop/550/report/overall_stats.rds")
+overall_stats <- readRDS(here::here("report", "overall_stats.rds"))
 knitr::kable(overall_stats, format = "html", caption = "Table 1: Overall Statistics of Data Value")
 ```
 
@@ -27,7 +28,7 @@ knitr::kable(overall_stats, format = "html", caption = "Table 1: Overall Statist
 Women and men are the same count, and "white" as a big part of the ethnicity, followed by "Hispanic".
 
 ```{r, echo=FALSE}
-categorical_breakdown <- readRDS("~/Desktop/550/report/categorical_breakdown.rds")
+categorical_breakdown <- readRDS(here::here("report", "categorical_breakdown.rds"))
 knitr::kable(categorical_breakdown, format = "html", caption = "Table 2: Breakdown by Categorical Variables")
 ```
 

@@ -1,9 +1,10 @@
 # Load required packages
 library(dplyr)
 library(kableExtra)
+library(here)
 
 # Read in the data
-data <- read.csv("~/Desktop/550/Alzheimer_Disease_Healthy_Aging_Data.csv")
+data <- read.csv(absolute_path_to_data, header = TRUE)
 
 # Create the required tables
 gender_breakdown <- data %>%

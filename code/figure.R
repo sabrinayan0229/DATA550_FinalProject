@@ -3,9 +3,10 @@ library(ggplot2)
 library(plotly)
 library(dplyr)
 library(htmlwidgets)
+library(here)
 
 # Read in the data
-data <- read.csv("~/Desktop/550/Alzheimer_Disease_Healthy_Aging_Data.csv")
+data <- read.csv(absolute_path_to_data, header = TRUE)
 
 # Create the required figure
 p <- ggplot(data, aes(x = as.factor(YearStart), fill = Class)) +
