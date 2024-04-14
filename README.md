@@ -13,6 +13,15 @@ OR
 - You can download it straight from the Kaggle website: <br />
 https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statistics?resource=download
 
+## Installation
+
+To set up the R package environment, run the following command in the terminal:
+
+make install
+
+This will install all necessary packages as specified in the `renv.lock` file.
+
+
 
 ## Contents
 

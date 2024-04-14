@@ -11,3 +11,6 @@ plot.png: code/figure.R
 
 clean:
 	rm -f report/report.html report/table.csv report/plot.png
+
+install:
+	Rscript -e 'renv::restore()'
