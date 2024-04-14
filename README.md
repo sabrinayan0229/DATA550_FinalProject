@@ -1,12 +1,11 @@
 # Final Project Alzheimer's Disease Analysis
 Welcome~~ 
 This repository contains the code and data for analyzing Alzheimer's disease data. <br />
-** I also upload the output file and plots as well. (Just in case you encounter any problems when you run my code locally on your end.) :) 
 
 ## Dataset
 
 - Since it is a rather big dataset file, Github doesn't allow me to upload it straight in CVS format. <br />
-I upload the first 1000 rows dataset file, it might alter the result but I uploaded the orgihnal output report. 
+I upload the first 250 rows dataset file, it might alter the result from the word summary. 
 
 OR
 
@@ -15,13 +14,16 @@ https://www.kaggle.com/datasets/amitvkulkarni/aging-and-memory-alzheimers-statis
 
 ## Installation
 
-To set up the R package environment, run the following command in the terminal:
+To set up the R package environment, you need to restore the package state with `renv` to ensure reproducibility. Here’s how to do it:
 
-make install
+1. Ensure you have R and `renv` installed on your system. If `renv` is not installed, you can install it by running `install.packages("renv")` in R.
+2. Run the following command in the terminal within the project directory:
 
-This will install all necessary packages as specified in the `renv.lock` file.
+   ```bash
+   make install
+   ``` 
 
-
+This command uses renv to install all necessary packages as specified in the renv.lock file. 
 
 ## Contents
 
@@ -31,7 +33,7 @@ This will install all necessary packages as specified in the `renv.lock` file.
   - `table.R`: Script for generating the required table.
   - `figure.R`: Script for generating the required figure.
 - `report/`: Contains the R Markdown file for the final report.
-- `Makefile`: Contains rules for building the final report.
+- `Makefile`: Contains rules for building the final report and managing dependencies with `renv`.
 
 ## Generating the Report
 
