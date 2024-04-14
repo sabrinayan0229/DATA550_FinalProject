@@ -1,7 +1,7 @@
 all: report.html
 
-report.html: report/report.Rmd table.csv plot.png
-	Rscript -e 'rmarkdown::render("report/report.Rmd", output_format = "html_document")'
+report.html: report/report.Rmd
+	Rscript -e "rmarkdown::render('report/report.Rmd')"
 
 table.csv: code/table.R
 	Rscript code/table.R

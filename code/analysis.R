@@ -41,8 +41,8 @@ ethnicity_breakdown <- data %>%
 categorical_breakdown <- bind_rows(gender_breakdown, ethnicity_breakdown)
 
 # Save the overall_stats and categorical_breakdown data frames to files
-saveRDS(overall_stats, "~/Desktop/550/report/overall_stats.rds")
-saveRDS(categorical_breakdown, "~/Desktop/550/report/categorical_breakdown.rds")
+saveRDS(overall_stats, here::here("report", "overall_stats.rds"))
+saveRDS(categorical_breakdown, here::here("report", "categorical_breakdown.rds"))
 
 # Generate the final report
-rmarkdown::render("~/Desktop/550/report/report.Rmd", output_format = "html_document")
+rmarkdown::render(here::here("report", "report.Rmd"), output_format = "html_document")

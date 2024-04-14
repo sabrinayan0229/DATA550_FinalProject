@@ -19,5 +19,4 @@ p <- ggplot(data, aes(x = as.factor(YearStart), fill = Class)) +
         legend.position = "bottom") +
   guides(fill = guide_legend(title = "Class"))
 
-# Save the plot as a static image file
-ggsave("~/Desktop/550/report/plot.png", plot = p, width = 8, height = 6, dpi = 300)
+ggsave(here::here("report", "plot.png"), plot = p, width = 8, height = 6, dpi = 300)

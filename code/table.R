@@ -22,4 +22,4 @@ ethnicity_breakdown <- data %>%
 categorical_breakdown <- bind_rows(gender_breakdown, ethnicity_breakdown)
 
 # Save the categorical_breakdown data frame to a file
-saveRDS(categorical_breakdown, "~/Desktop/550/report/categorical_breakdown.rds")
+saveRDS(categorical_breakdown, here::here("report", "categorical_breakdown.rds"))
