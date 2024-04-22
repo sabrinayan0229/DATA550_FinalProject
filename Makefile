@@ -18,7 +18,7 @@ install:
 .PHONY: build-image run-report
 
 build-image:
-	docker build -t username/myproject .
+	docker build -t sabrinayan0229/data550_final .
 
 run-report:
-	docker run -v $(shell pwd)/report:/usr/src/app/report sabrinayan0229/data550_final
+	docker run -v $(pwd)/report:/usr/src/app/report sabrinayan0229/data550_final

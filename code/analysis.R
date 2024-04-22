@@ -1,6 +1,6 @@
 here::i_am("code/analysis.R")
 
-absolute_path_to_data <- here::here("data", "Alzheimer_Disease_Healthy_Aging_Data_Aging_Data.csv")
+absolute_path_to_data <- here::here("data", "Alzheimer_Disease_Healthy_Aging_Data.csv")
 data <- read.csv(absolute_path_to_data, header = TRUE)
 
 # Load required packages
@@ -9,11 +9,7 @@ library(ggplot2)
 library(table1)
 library(tidyverse)
 library(readxl)
-library(writexl)
-library(car)
-library(readr)
 library(kableExtra)
-library(plotly)
 library(here)
 
 # Perform data preprocessing and analysis

@@ -1,8 +1,5 @@
 # Load required packages
 library(ggplot2)
-library(plotly)
-library(dplyr)
-library(htmlwidgets)
 library(here)
 
 # Read in the data
