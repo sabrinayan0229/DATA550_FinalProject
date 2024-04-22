@@ -21,4 +21,4 @@ build-image:
 	docker build -t username/myproject .
 
 run-report:
-	docker run -v $(shell pwd)/report:/usr/src/app/report username/myproject
+	docker run -v $(shell pwd)/report:/usr/src/app/report sabrinayan0229/data550_final

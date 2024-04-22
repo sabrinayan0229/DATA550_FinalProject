@@ -1,25 +1,25 @@
-# Use an official R base image
 FROM r-base:latest
 
-# Install pandoc and LaTeX for R Markdown support
 RUN apt-get update && apt-get install -y \
-    pandoc \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libfontconfig1-dev \
+    libcairo2-dev \
+    libxt-dev \
     texlive-latex-base \
     texlive-fonts-recommended \
     texlive-fonts-extra \
-    texlive-latex-extra
+    texlive-latex-extra \
+    pandoc \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory in the container
 WORKDIR /usr/src/app
-
-# Copy the current directory contents into the container at /usr/src/app
 COPY . /usr/src/app
 
-# Install required R packages
-RUN Rscript -e "install.packages(c('ggplot2', 'dplyr', 'kableExtra', 'knitr', 'rmarkdown'), repos='http://cran.rstudio.com/')"
+RUN Rscript -e "options(repos = list(CRAN = 'http://cran.rstudio.com/')); \
+                install.packages(c('ggplot2', 'dplyr', 'kableExtra', 'knitr', 'rmarkdown'))"
 
-# Make port 80 available to the world outside this container
 EXPOSE 80
 
-# Run app.R when the container launches
 CMD ["Rscript", "code/analysis.R"]
