@@ -14,3 +14,11 @@ clean:
 
 install:
 	Rscript -e 'renv::restore()'
+
+.PHONY: build-image run-report
+
+build-image:
+	docker build -t username/myproject .
+
+run-report:
+	docker run -v $(shell pwd)/report:/usr/src/app/report username/myproject
