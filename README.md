@@ -54,6 +54,7 @@ run-report:
   - `figure.R`: Script for generating the required figure.
 - `report/`: Contains the R Markdown file for the final report.
 - `Makefile`: Contains rules for building the final report and managing dependencies with `renv`.
+- `Dockerfile`: Contains all commands needed to build the Docker image.
 
 ## Generating the Report
 
