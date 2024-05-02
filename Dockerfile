@@ -15,8 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN Rscript -e "tinytex::install_tinytex()"
-
 ENV PATH="${PATH}:/root/bin"
 
 CMD ["Rscript", "code/analysis.R"]
